@@ -19,6 +19,9 @@ try:
     sql = "delete from myclass where  score < 8888;"
     cur.execute(sql)
     db.commit()
+
+    xiugai = property
+
 except Exception as e:
     print(e)
     db.rollback()
